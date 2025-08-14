@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: aqua; font-size: x-large; font-family: 'Times New Roman', Times, serif;">Project Showcase</h1>
+    </header>
+    
+    <!--navigation menu-->
+    <nav>
+        <ul>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teaching.html">Teaching Practise</a></li>
+            <li><a href="projects.html">Project Showcase</a></li>
+            <li><a href="worksamples.html">Samples of Work</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+     <!--this is the main content area for my page, in line with semantic HTML-->
+    <main>
+        <!--this section is for shwocasing projects ive made-->
+        <section>
+            <style>
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 200px;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+
+                .project-card {
+                    flex: 1 1 350px;                /* Responsive card width */
+                    background-color: #f9f9f9;    /* Light grey background */
+                    border: 1px solid #ddd;       /* Light border */
+                    padding: 15px;                  /* Space inside card */
+                    border-radius: 8px;             /* Rounded corners */
+                    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);      /* Soft shadow */
+                }
+                    .project-card img {
+                    width: 100%;          /* Image fills card width */
+                    height: auto;         /* Maintains aspect ratio */
+                    border-radius: 4px;   /* Slightly rounded image corners */
+                }
+                    .project-card h3 {
+                    margin-top: 10px;     /* Space above heading */
+                    font-size: 1.1rem;    /* Slightly larger heading text */
+                    color: #2c3e50;     /* Dark grey-blue colour */
+                }
+
+            </style>
+            <div class="flex-container">
+                <div class="project-card">
+                    <img src="images/koalakrib.png" width= "200px" alt="photo of my major project, a koala nesting box">
+                    <h3>University Major work</h3>                        
+                    <p>Example of a stage 6 Design and Technologies project</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/lightbar.png" width= "500px" alt="photo of a light created to be hung/suspended off a ledge">
+                    <h3>University Design Project</h3>
+                    <p>Example of a stage 4 Design and Technologies project</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/footstool.jpg" width="500px" alt="photo of a footstool i created at univeristy">
+                    <h3>University Timber Project</h3>
+                    <p>Example of a stage 5 Design and Technologies project</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/choppingboard.png" width="500px" alt="render of a chopping board">
+                    <h3>University Timber Project</h3>
+                    <p>Example of a stage 4 timber project</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/phonebox.png" width="500px" alt="photo of a phonebox for year 7 students">
+                    <h3>University Timber Project</h3>
+                    <p>Example of a simple stage 4 timber project</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/toolbox.png" width="500px" alt="render of a metalwork stage 4 folding sheetmetal toolbox">
+                    <h3>University Metal Project</h3>
+                    <p>Example of a stage 4 metalwork project</p>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+
+</body>
+</html>
