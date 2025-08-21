@@ -3,58 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matthew's Teaching Portfolio - Project Showcase</title>
+    <link rel="stylesheet" href="starter.css">
+
 </head>
 <body>
     <header>
-        <h1 style="color: aqua; font-size: x-large; font-family: 'Times New Roman', Times, serif;">Project Showcase</h1>
+        <h1>Project Showcase</h1>
     </header>
     
     <!--navigation menu-->
     <nav>
-        <ul>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="teaching.html">Teaching Practise</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
+        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="teaching.html">Teaching Practise</a></li>
+                <li><a class="active" href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        
+    </nav>  
 
      <!--this is the main content area for my page, in line with semantic HTML-->
     <main>
         <!--this section is for shwocasing projects ive made-->
-        <section>
-            <style>
-                .flex-container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 200px;
-                    justify-content: space-between;
-                    margin-top: 20px;
-                }
-
-                .project-card {
-                    flex: 1 1 350px;                /* Responsive card width */
-                    background-color: #f9f9f9;    /* Light grey background */
-                    border: 1px solid #ddd;       /* Light border */
-                    padding: 15px;                  /* Space inside card */
-                    border-radius: 8px;             /* Rounded corners */
-                    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);      /* Soft shadow */
-                }
-                    .project-card img {
-                    width: 100%;          /* Image fills card width */
-                    height: auto;         /* Maintains aspect ratio */
-                    border-radius: 4px;   /* Slightly rounded image corners */
-                }
-                    .project-card h3 {
-                    margin-top: 10px;     /* Space above heading */
-                    font-size: 1.1rem;    /* Slightly larger heading text */
-                    color: #2c3e50;     /* Dark grey-blue colour */
-                }
-
-            </style>
+        <section> 
             <div class="flex-container">
                 <div class="project-card">
                     <img src="images/koalakrib.png" width= "200px" alt="photo of my major project, a koala nesting box">
@@ -97,4 +72,11 @@
 
 
 </body>
+
+<footer>
+    <div class="container">
+        <P> &copy; 2025 Matthew Spencer. All rights reserved</P>
+    </div>
+</footer>
+
 </html>

@@ -3,108 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matthew's Teaching Portfolio - About Me</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <header>
-        <h1 style="color: aqua; font-size: x-large; font-family: 'Times New Roman', Times, serif;">About Me</h1>
+        <h1>About Me</h1>
     </header>
     
     <!--navigation menu-->
     <nav>
-        <ul>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="teaching.html">Teaching Practise</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
-
+        
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About me</a></li>
+                <li><a href="teaching.html">Teaching Practise</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+       
+    </nav>  
     <!--here is the main section, in line with semantic HTML-->
     <main>
-        <section>
-            <p>My name is <strong><em>Matt Spencer</em></strong> spencer, and I am studying a bachelor of teaching, and have aspirations to become a secondary high school timber teacher, after completing my Uni degree at ACU strathfield 
-                <!-- eventually --> </p>
-            <p>I have experience teaching children, teenagers and adults in Martial arts, as well as working at a before and after school care centre. My other hobbies are going surfing, fishing and exploring the bush <!-- who doesnt! --> </p>
-        </section>
+            <section class="section">
+                <article class="profile">
+                    <div class="profile-text">
+                        <p>My name is <strong><em>Matt Spencer</em></strong>, and I am studying a bachelor of teaching, and have aspirations to become a secondary high school timber teacher, after completing my Uni degree at ACU strathfield 
+                            <!-- eventually --> </p>
+                        <p>I have experience teaching children, teenagers and adults in Martial arts, as well as working at a before and after school care centre. My other hobbies are going surfing, fishing and exploring the bush <!-- who doesnt! --> </p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profilepicture.png" alt="profile picture of Matthew Spencer">
+                        <img src="images/teacherquote.png" width="500px" alt="quote reading be the change you want see in the world">
+                    </div>
+                </article>
+            </section>
+            
+            
+            <section class="section">
+                <p> here is a resource i commonly refer to for my teaching <a href="https://teachingwoodwork.com"  target="blank"> teaching woodwork</a></p>
+            </section>
         
-        <!--this section contains the images of the profile picture, and the teaching quote-->
-        <section>
-            <img src="images/profilepicture.png" width="200px"alt="personal photo" >
-            <img src="images/teacherquote.png" width="500px" alt="quote reading be the change you want see in the world">
-        </section>
         
-        <section>
-            <p> here is a resource i commonly refer to for my teaching <a href="https://teachingwoodwork.com"  target="blank"> teaching woodwork</a></p>
+        <section class="section">
+            <!--placement overview-->
+            <h2>Practicum Placement Overview</h2>
+                
+                
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>School</th>
+                            <th>Subjects Taught</th>
+                            <th>Year Level</th>
+                            <th>Term</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>St John Bosco</td>
+                            <td>Stage 3/4 Inustrial Technology</td>
+                            <td>Year 7-10</td>
+                            <td>Term 4, 2023</td>
+                        </tr>
+                        <tr>
+                            <td>East Hills Girls</td>
+                            <td>Stage 3/4 Food Technology</td>
+                            <td>Year 7-10</td>
+                            <td>Term 4, 2022</td>
+                        </tr>
+                    </tbody>
+                <table>
         </section>
     </main> 
-    
-    <section>
-        <!--place,emt overview-->
-        <h2>Practicum Placement Overview</h2>
-            
-            <style>
-                table{
-                    width: 100%;
-                    border-collapse: collapse;
-                    margin-top: 10px;
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-
-                th, td {
-                    border: 1px solid #ccc;
-                    padding: 10px 12px;
-                    text-align: left;
-                }
-
-                thead {
-                    background-color: #f0f0f0;
-                }
-
-                th{
-                    color: #333;
-                    font-weight: bold;
-                }
-
-                tr:nth-child(even) {
-                    background-color: #fafafa;
-                }
-
-                h2 {
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-size: 1.4rem;
-                    margin-bottom: 8px;
-                    color: #2c3e2c
-                }
-                
-            </style>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>School</th>
-                        <th>Subjects Taught</th>
-                        <th>Year Level</th>
-                        <th>Term</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>St John Bosco</td>
-                        <td>Stage 3/4 Inustrial Technology</td>
-                        <td>Year 7-10</td>
-                        <td>Term 4, 2023</td>
-                    </tr>
-                    <tr>
-                        <td>East Hills Girls</td>
-                        <td>Stage 3/4 Food Technology</td>
-                        <td>Year 7-10</td>
-                        <td>Term 4, 2022</td>
-                    </tr>
-                </tbody>
-            <table>
-    </section> 
 </body>
+
+<footer>
+    <div class="container">
+        <P> &copy; 2025 Matthew Spencer. All rights reserved</P>
+    </div>
+</footer>
+
 </html>
