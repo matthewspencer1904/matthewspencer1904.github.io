@@ -229,7 +229,24 @@ tr:nth-child(even) {
   font-size: 1.1rem;    /* Slightly larger heading text */
   color: #2c3e50;     /* Dark grey-blue colour */
 }
-
+.quote-card {
+  flex: 1 1 350px;                /* Responsive card width */
+  background-color: #f9f9f9;    /* Light grey background */
+  border: 1px solid #ddd;       /* Light border */
+  padding: 15px;                  /* Space inside card */
+  border-radius: 8px;             /* Rounded corners */
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);      /* Soft shadow */
+}
+.quote-card img {
+  width: 100%;          /* Image fills card width */
+  height: auto;         /* Maintains aspect ratio */
+  border-radius: 4px;   /* Slightly rounded image corners */
+}
+.quote-card h3 {
+  margin-top: 10px;     /* Space above heading */
+  font-size: 1.1rem;    /* Slightly larger heading text */
+  color: #2c3e50;     /* Dark grey-blue colour */
+}
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
   display: grid;                                                  /* Grid layout */
