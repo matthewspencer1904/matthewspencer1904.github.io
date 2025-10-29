@@ -40,38 +40,37 @@
             <h1>Home</h1>
             <!--exercise for title case, min length and status class-->
            <section class="section">  
-                    <p id="greeting">Welcome!</p>
-                    <input id="nameInput" class="input-spaced" type="text" placeholder="Enter Your Name"> 
-                    
-                    <ul class="actions">
-                        <li><button type="submit" class="button small">Confirm</button></li>
-                    </ul>
-                </section>
+                <p id="greeting">Welcome!</p>
+                <input id="nameInput" class="input-spaced" type="text" placeholder="Enter Your Name"> 
+                
+                <ul class="actions">
+                    <li><button id="nameBtn" type="button" class="button small">Confirm</button></li>
+                </ul>
+            </section>
 
-                <script>
-                    // Convert to title case
-                    function toTitleCase(s) {
-                        return s.replace(/\w\S*/g, w => w[0].toUpperCase() + w.slice(1).toLowerCase());
+            <script>
+                // Convert to title case
+                function toTitleCase(s) {
+                    return s.replace(/\w\S*/g, w => w[0].toUpperCase() + w.slice(1).toLowerCase());
+                }
+
+                // Wait for button click
+                document.getElementById("nameBtn").addEventListener("click", () => {
+                    const raw = document.getElementById("nameInput").value.trim();
+                    const greeting = document.getElementById("greeting");
+
+                    // Validate it's at least 2 characters long
+                    if (raw.length < 2) {
+                        greeting.textContent = "Name must be at least 2 characters long.";
+                        greeting.classList.add("error");
+                        return;
                     }
 
-                    // Wait for button click
-                    document.getElementById("nameBtn").addEventListener("click", () => {
-                        const raw = document.getElementById("nameInput").value.trim();
-                        const greeting = document.getElementById("greeting");
-
-                        // Validate it's at least 2 characters long
-                        if (raw.length < 2) {
-                            greeting.textContent = "Name must be at least 2 characters long.";
-                            greeting.classList.add("error");
-                            return;
-                        }
-
-                        // If valid, output greeting using title case
-                        greeting.textContent = `Hello, ${toTitleCase(raw)}!`;
-                        greeting.classList.remove("error");
-                    });
-                </script>
-            </section>
+                    // If valid, output greeting using title case
+                    greeting.textContent = `Hello, ${toTitleCase(raw)}!`;
+                    greeting.classList.remove("error");
+                });
+            </script>
             
             <!--this sectionis the unordered list of attributes im known for-->
                 <section class="section">
